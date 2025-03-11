@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1088771007467",
+    "project_id": "flynestgroup",
+    "storage_bucket": "flynestgroup.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088771007467:android:bc4c7dad1ab3fc3dde6fae",
+        "android_client_info": {
+          "package_name": "com.group.FlyNest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088771007467-rd0vrl0s7j9tgg6714al6j5etc5olvis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.group.FlyNest",
+            "certificate_hash": "e5f18c005c8fa36b7ff565f753e91dad82a1382b"
+          }
+        },
+        {
+          "client_id": "1088771007467-8pe928r7sbfsmour7c2a3s9ktkgjukvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFXA4jJnA8ffsPqZr8xgv0s_obR5WD6nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088771007467-8pe928r7sbfsmour7c2a3s9ktkgjukvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
