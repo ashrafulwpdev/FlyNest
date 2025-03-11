@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneNumber">
+
+
+    <TextView
+        android:id="@+id/Create_Account"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:text="Login"
+        android:textColor="#0D0D0D"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="264dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Welcome back to the app"
+        android:textColor="#555555"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/Create_Account"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Create_Account"
+        app:layout_constraintTop_toBottomOf="@+id/Create_Account"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/phoneNum"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        tools:ignore="MissingConstraints">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            app:ccpDialog_keyboardAutoPopup="false"
+            android:paddingTop="5dp"
+            app:ccp_arrowSize="16sp"
+            app:ccp_autoFormatNumber="true"
+            app:ccp_showArrow="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="false"
+            app:ccp_showNameCode="false"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showPhoneCode="true"
+            app:ccp_textSize="16sp"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="228dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingStart="30sp"
+            android:textColor="@color/black">
+
+
+        </EditText>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_text_shape"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/phoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:elevation="3dp"
+        android:paddingStart="20sp"
+        android:paddingTop="1sp"
+        android:paddingEnd="20sp"
+        android:text="Phone Number"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:paddingStart="20sp"
+        android:paddingTop="4sp"
+        android:paddingEnd="20sp"
+        android:text="Email"
+        android:textAllCaps="false"
+        android:textColor="#EC441E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/phoneNumber"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/forgotText"
+        android:layout_width="128dp"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+
+        android:gravity="end"
+
+        android:paddingStart="2dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:text="Forgot Password?"
+        android:textColor="#EC441E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#EC441E"
+
+
+        android:fontFamily="sans-serif-medium"
+
+        android:text="Login"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="157dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:buttonTint="#EC441E"
+        android:text="Remember Me"
+        android:textColor="#EC441E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/sing_up_button"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:text="Create an account"
+        android:textColor="#EC441E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
